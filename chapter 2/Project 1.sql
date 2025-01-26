@@ -22,8 +22,26 @@ USE MDC_CH02_CQ;
 -- WHERE TotalAmount > 100.00;
 
 -- TASK E
-SELECT LastName,FirstName,Phone
-FROM mdc_ch02_cq.customer
-WHERE FirstName LIKE 'B%';
+-- SELECT LastName,FirstName,Phone
+-- FROM mdc_ch02_cq.customer
+-- WHERE FirstName LIKE 'B%';
+
+-- TASK F
+-- SELECT LastName,FirstName,Phone
+-- FROM mdc_ch02_cq.customer
+-- WHERE LastName LIKE '%cat%';
+
+-- TASK G
+-- SELECT LastName,FirstName,Phone
+-- FROM mdc_ch02_cq.customer
+-- WHERE phone LIKE '_23%';
+
+-- TASK H
+-- SELECT LastName, FirstName,Phone
+-- FROM mdc_ch02_cq.customer
+-- JOIN mdc_ch02_cq.invoice
+-- WHERE TotalAmount < 8.00;
+-- max = $158
+-- min = $8
 
 
