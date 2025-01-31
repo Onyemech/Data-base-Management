@@ -1,0 +1,18 @@
+-- ALTER TABLE `cap_cod`.`Riders` RENAME COLUMN `id` TO `RidersId`;
+-- CREATE TABLE `cap_cod`.`Rides`(
+-- 	`RideId` INT AUTO_INCREMENT PRIMARY KEY,
+--     `DriversId` INT NOT NULL,
+--     `RidersId` INT NOT NULL,
+--     `Fare` DECIMAL(10, 2) NOT NULL,
+--     `Rating` DECIMAL(2, 2) NOT NULL,
+--     `DistanceKM`DECIMAL(5, 2) NOT NULL,
+--     FOREIGN KEY (`DriversId`) REFERENCES `cap_cod`.`Drivers`(`DriversId`),
+-- 	FOREIGN KEY (`RidersId`) REFERENCES `cap_cod`.`Riders`(`RidersId`)
+-- );
+-- ALTER TABLE `cap_cod`.`rides` ADD COLUMN `RidesId` INT;
+-- CREATE TABLE `cap_cod`.`Payments`(
+-- 	`paymentID` INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+--     `Amount` DECIMAL(10, 2) NOT NULL,
+--     `paymentMethod` ENUM('Credit Card','cash','Bank Transfer','Payment Via Crypto') NOT NULL,
+-- 	FOREIGN KEY (RideId) REFERENCES `cap_cod`.`Rides`(RideId) 
+-- );
