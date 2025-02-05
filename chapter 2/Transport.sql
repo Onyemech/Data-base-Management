@@ -1,3 +1,5 @@
+use lagos_transport;
+
 -- ALTER TABLE `cap_cod`.`Riders` RENAME COLUMN `id` TO `RidersId`;
 -- CREATE TABLE `cap_cod`.`Rides`(
 -- 	`RideId` INT AUTO_INCREMENT PRIMARY KEY,
@@ -120,8 +122,34 @@
 -- (49, 9, 24, 2200, 3.9, 6),
 -- (50, 10, 25, 3700, 4.4, 14);
 
-
+-- task 1
 -- use cap_cod;
 -- select Name,Rating from drivers
 -- order by rating
 -- limit 5
+
+-- task 2
+
+-- SELECT 
+--   Riders.RidersID, 
+--   Riders.Name, 
+--   COUNT(Rides.RideID) AS TotalRides
+-- FROM 
+--   Riders
+-- JOIN 
+--   Rides ON Riders.RidersID = Rides.RidersID
+-- WHERE 
+--   Riders.City IN ('Lekki', 'Ikeja', 'Victoria Island', 'Surulere', 'Yaba')
+-- GROUP BY Riders.RidersID,  Riders.Name
+-- HAVING COUNT(Rides.RideID) > 5
+
+-- task 3
+-- SELECT SUM(Amount) AS TotalRevenue
+-- FROM Payment
+-- WHERE PaymentDate >= NOW() - Interval 1 month;
+
+
+-- task 4
+
+  
+
